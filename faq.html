@@ -1,0 +1,15 @@
+---
+layout: default
+title: FAQ this here be the title
+---
+
+<h1>FAQ</h1>
+
+<ul>
+  {% for f in site.faqs %}
+    <li>
+      <h4>{{f.question}}</h4>
+      <p>{{f.content}}</p>
+    </li>
+  {% endfor %}
+</ul>
